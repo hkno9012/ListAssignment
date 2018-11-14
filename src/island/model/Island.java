@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Island
 {
-	private 
-	private
-	private
+	private String Name;
+	private int Inhabitants;
+	private boolean isDesertIsland;
 }
