@@ -6,5 +6,20 @@ import java.util.ArrayList;
 
 public class IslandController
 {
-
+	private Island GilligansIsland;
+	//___________________________________
+	public IslandController()
+	{
+		GilligansIsland = new Island();
+	}
+	//------------------------------------
+	public Island getIsland()
+	{
+		return GilligansIsland;
+	}
+	//____________________________________
+	public void start()
+	{
+		
+	}
 }
