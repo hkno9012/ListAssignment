@@ -7,12 +7,14 @@ public class Island
 	private String Name;
 	private int Inhabitants;
 	private boolean isDesertIsland;
+	private ArrayList<String> IslandList;
 	//_________________________________
 	public Island()
 	{
 		this.Name = "";
 		this.Inhabitants = 0;
 		this.isDesertIsland = false;
+		this.IslandList = new ArrayList<String>();
 	}
 	//_________________________________
 	public String getName()
@@ -29,6 +31,11 @@ public class Island
 	{
 		return isDesertIsland;
 	}
+	//---------------------------------
+	public ArrayList<String> getIslandList()
+	{
+		return IslandList;
+	}
 	//__________________________________
 	public void setName(String Name)
 	{
@@ -43,5 +50,10 @@ public class Island
 	public void setIsDesertIsland(boolean isDesertIsland)
 	{
 		this.isDesertIsland = isDesertIsland;
+	}
+	//----------------------------------
+	public void setIslandList(ArrayList<String> IslandList)
+	{
+		this.IslandList = IslandList;
 	}
 }

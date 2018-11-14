@@ -47,11 +47,10 @@ public class IslandController
 		
 		try
 		{
-			Integer.parseInt(maybeInt);//If the String can turn into an integer, then it's valid
+			Integer.parseInt(maybeInt);
 			isValid = true;
 		}
-		//If this particular exception is caught, fix it with the following
-		catch (NumberFormatException exception)//Always use this exception with parse methods
+		catch (NumberFormatException exception)
 		{
 			JOptionPane.showMessageDialog(null, "Type in a whole number");
 		}
@@ -65,11 +64,10 @@ public class IslandController
 		
 		try
 		{
-			Double.parseDouble(maybeDouble);//If the String can turn into a double, then it's valid
+			Double.parseDouble(maybeDouble);
 			isValid = true;
 		}
-		//If this particular exception is thrown, catch it with the following
-		catch (NumberFormatException exception)//Always use this exception with parse methods
+		catch (NumberFormatException exception)
 		{
 			JOptionPane.showMessageDialog(null, "Type in a decimal value");
 		}
@@ -88,7 +86,7 @@ public class IslandController
 		}
 		catch (NumberFormatException exception)
 		{
-			JOptionPane.showMessageDialog(null, "Must be a boolean");
+			JOptionPane.showMessageDialog(null, "Type True or False");
 		}
 		return isValid;
 	}
