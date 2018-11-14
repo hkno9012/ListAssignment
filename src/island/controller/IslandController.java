@@ -5,13 +5,20 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 //______________________________________
 
+
 public class IslandController
 {
+	private Island Hawaii;
+	private Island Bali;
+	private Island FoxIslands;
+	private ArrayList<Island> IslandList;
+	
 	private Island GilligansIsland;
 	//___________________________________
 	public IslandController()
 	{
 		GilligansIsland = new Island();
+		ArrayList<Island> IslandList = new ArrayList<Island>();
 	}
 	//------------------------------------
 	public Island getIsland()
@@ -21,7 +28,7 @@ public class IslandController
 	//____________________________________
 	public void start()
 	{
-		String userInput = JOptionPane.showInputDialog(null, "What's the name of the TV show that's on an island?");
+		/*String userInput = JOptionPane.showInputDialog(null, "What's the name of the TV show that's on an island?");
 		GilligansIsland.setName(userInput);
 		addAttributes(userInput, null, null);
 		//-----------------------------------------------------------------------------------------------------------
@@ -41,11 +48,12 @@ public class IslandController
 			userInputIsDesertIsland = Boolean.parseBoolean(userInput);
 		}
 		GilligansIsland.setIsDesertIsland(userInputIsDesertIsland);
-		addAttributes(null, null, userInput);
+		addAttributes(null, null, userInput);*/
 	}
 	//____________________________________
-	public void addAttributes(String addedName, String addedInhabitants, String addedIsDesertIsland)
+	public void buildTheLists()
 	{
+		IslandList.add("Gilligan's Island");
 		
 	}
 	//____________________________________________

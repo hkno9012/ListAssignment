@@ -7,14 +7,12 @@ public class Island
 	private String Name;
 	private int Inhabitants;
 	private boolean isDesertIsland;
-	private ArrayList<String> IslandList;
 	//_________________________________
 	public Island()
 	{
-		this.Name = "";
-		this.Inhabitants = 0;
-		this.isDesertIsland = false;
-		this.IslandList = new ArrayList<String>();
+		this.Name = Name;
+		this.Inhabitants = Inhabitants;
+		this.isDesertIsland = isDesertIsland;
 	}
 	//_________________________________
 	public String getName()
