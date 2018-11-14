@@ -23,6 +23,7 @@ public class IslandController
 	{
 		String userInput = JOptionPane.showInputDialog(null, "What's the name of the TV show that's on an island?");
 		GilligansIsland.setName(userInput);
+		addAttributes(userInput, null, null);
 		//-----------------------------------------------------------------------------------------------------------
 		int userInputInhabitants = 0;
 		userInput = JOptionPane.showInputDialog(null, "How many people are on the island?");
@@ -31,6 +32,7 @@ public class IslandController
 			userInputInhabitants = Integer.parseInt(userInput);
 		}
 		GilligansIsland.setInhabitants(userInputInhabitants);
+		addAttributes(null, userInput, null);
 		//-----------------------------------------------------------------------------------------------------------
 		boolean userInputIsDesertIsland = false;
 		userInput = JOptionPane.showInputDialog(null, "Is the island a desert island? (True or False");
@@ -39,8 +41,14 @@ public class IslandController
 			userInputIsDesertIsland = Boolean.parseBoolean(userInput);
 		}
 		GilligansIsland.setIsDesertIsland(userInputIsDesertIsland);
+		addAttributes(null, null, userInput);
 	}
 	//____________________________________
+	public void addAttributes(String addedName, String addedInhabitants, String addedIsDesertIsland)
+	{
+		
+	}
+	//____________________________________________
 	private boolean validInt(String maybeInt)
 	{
 		boolean isValid = false;
