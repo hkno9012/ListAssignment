@@ -23,7 +23,7 @@ public class IslandController
 	{
 		String userInput = JOptionPane.showInputDialog(null, "What's the name of the TV show that's on an island?");
 		GilligansIsland.setName(userInput);
-		
+		//-----------------------------------------------------------------------------------------------------------
 		int userInputInhabitants = 0;
 		userInput = JOptionPane.showInputDialog(null, "How many people are on the island?");
 		if(validInt(userInput))
@@ -31,8 +31,14 @@ public class IslandController
 			userInputInhabitants = Integer.parseInt(userInput);
 		}
 		GilligansIsland.setInhabitants(userInputInhabitants);
-		
-		userInput = JOptionPane.showInputDialog(null, "Is the island a desert island? (Yes or No");
+		//-----------------------------------------------------------------------------------------------------------
+		boolean userInputIsDesertIsland = false;
+		userInput = JOptionPane.showInputDialog(null, "Is the island a desert island? (True or False");
+		if(validBoolean(userInput))
+		{
+			userInputIsDesertIsland = Boolean.parseBoolean(userInput);
+		}
+		GilligansIsland.setIsDesertIsland(userInputIsDesertIsland);
 	}
 	//____________________________________
 	private boolean validInt(String maybeInt)
@@ -70,4 +76,20 @@ public class IslandController
 		
 		return isValid;
 	}*/
+	//-----------------------------------------------------------------------------------
+	private boolean validBoolean(String maybeBoolean)
+	{
+		boolean isValid = false;
+		
+		try
+		{
+			Boolean.parseBoolean(maybeBoolean);
+			isValid = true;
+		}
+		catch (NumberFormatException exception)
+		{
+			JOptionPane.showMessageDialog(null, "Must be a boolean");
+		}
+		return isValid;
+	}
 }
