@@ -9,21 +9,31 @@ import javax.swing.JOptionPane;
 public class IslandController
 {
 	private Island Hawaii;
-	private Island Bali;
-	private Island FoxIslands;
+	private Island England;
+	private Island Gilligan;
 	private ArrayList<Island> IslandList;
-	
-	private Island GilligansIsland;
 	//___________________________________
 	public IslandController()
 	{
-		GilligansIsland = new Island();
+		Hawaii = new Island();
+		England = new Island();
+		Gilligan = new Island();
 		ArrayList<Island> IslandList = new ArrayList<Island>();
 	}
 	//------------------------------------
-	public Island getIsland()
+	public Island getHawaii()
 	{
-		return GilligansIsland;
+		return Hawaii;
+	}
+	//-------------------------------------
+	public Island getEngland()
+	{
+		return England;
+	}
+	//-------------------------------------
+	public Island getGilligan()
+	{
+		return Gilligan;
 	}
 	//____________________________________
 	public void start()
