@@ -1,18 +1,16 @@
 package island.model;
 
-import java.util.ArrayList;
-
 public class Island
 {
 	private String Name;
 	private int Inhabitants;
-	private boolean isDesertIsland;
+	private boolean isWarm;
 	//_________________________________
 	public Island()
 	{
-		this.Name = Name;
+		/*this.Name = Name;
 		this.Inhabitants = Inhabitants;
-		this.isDesertIsland = isDesertIsland;
+		this.isDesertIsland = isDesertIsland;*/
 	}
 	//_________________________________
 	public String getName()
@@ -25,14 +23,9 @@ public class Island
 		return Inhabitants;
 	}
 	//---------------------------------
-	public boolean getIsDesertIsland()
+	public boolean getIsWarm()
 	{
-		return isDesertIsland;
-	}
-	//---------------------------------
-	public ArrayList<String> getIslandList()
-	{
-		return IslandList;
+		return isWarm;
 	}
 	//__________________________________
 	public void setName(String Name)
@@ -45,13 +38,8 @@ public class Island
 		this.Inhabitants = Inhabitants;
 	}
 	//----------------------------------
-	public void setIsDesertIsland(boolean isDesertIsland)
+	public void setIsWarm(boolean isWarm)
 	{
-		this.isDesertIsland = isDesertIsland;
-	}
-	//----------------------------------
-	public void setIslandList(ArrayList<String> IslandList)
-	{
-		this.IslandList = IslandList;
+		this.isWarm = isWarm;
 	}
 }

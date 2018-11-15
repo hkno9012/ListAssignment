@@ -38,36 +38,17 @@ public class IslandController
 	//____________________________________
 	public void start()
 	{
-		/*String userInput = JOptionPane.showInputDialog(null, "What's the name of the TV show that's on an island?");
-		GilligansIsland.setName(userInput);
-		addAttributes(userInput, null, null);
-		//-----------------------------------------------------------------------------------------------------------
-		int userInputInhabitants = 0;
-		userInput = JOptionPane.showInputDialog(null, "How many people are on the island?");
-		if(validInt(userInput))
-		{
-			userInputInhabitants = Integer.parseInt(userInput);
-		}
-		GilligansIsland.setInhabitants(userInputInhabitants);
-		addAttributes(null, userInput, null);
-		//-----------------------------------------------------------------------------------------------------------
-		boolean userInputIsDesertIsland = false;
-		userInput = JOptionPane.showInputDialog(null, "Is the island a desert island? (True or False");
-		if(validBoolean(userInput))
-		{
-			userInputIsDesertIsland = Boolean.parseBoolean(userInput);
-		}
-		GilligansIsland.setIsDesertIsland(userInputIsDesertIsland);
-		addAttributes(null, null, userInput);*/
+		
 	}
 	//____________________________________
 	public void buildTheLists()
 	{
-		IslandList.add("Gilligan's Island");
-		
+		IslandList.add(Hawaii);
+		IslandList.add(England);
+		IslandList.add(Gilligan);
 	}
 	//____________________________________________
-	private boolean validInt(String maybeInt)
+	/*private boolean validInt(String maybeInt)
 	{
 		boolean isValid = false;
 		
@@ -82,7 +63,7 @@ public class IslandController
 		}
 		
 		return isValid;
-	}
+	}*/
 	//-------------------------------------------------------------------------------------
 	/*private boolean validDouble(String maybeDouble)
 	{
@@ -101,7 +82,7 @@ public class IslandController
 		return isValid;
 	}*/
 	//-----------------------------------------------------------------------------------
-	private boolean validBoolean(String maybeBoolean)
+	/*private boolean validBoolean(String maybeBoolean)
 	{
 		boolean isValid = false;
 		
@@ -115,5 +96,5 @@ public class IslandController
 			JOptionPane.showMessageDialog(null, "Type True or False");
 		}
 		return isValid;
-	}
+	}*/
 }
