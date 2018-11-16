@@ -8,9 +8,16 @@ public class Island
 	//_________________________________
 	public Island()
 	{
-		/*this.Name = Name;
+		this.Name = "My Island";
+		this.Inhabitants = 40;
+		this.isWarm = true;
+	}
+	//---------------------------------
+	public Island(int Inhabitants)
+	{
 		this.Inhabitants = Inhabitants;
-		this.isDesertIsland = isDesertIsland;*/
+		this.Name = "My Island: " + Inhabitants + " people";
+		this.isWarm = true;
 	}
 	//_________________________________
 	public String getName()

@@ -12,6 +12,7 @@ public class IslandController
 	private Island England;
 	private Island Gilligan;
 	private ArrayList<Island> IslandList;
+	public Island IslandArray;
 	//___________________________________
 	public IslandController()
 	{
@@ -19,6 +20,7 @@ public class IslandController
 		England = new Island();
 		Gilligan = new Island();
 		ArrayList<Island> IslandList = new ArrayList<Island>();
+		Island[] IslandArray = new Island[3];
 	}
 	//------------------------------------
 	public Island getHawaii()
