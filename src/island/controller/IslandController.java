@@ -12,17 +12,47 @@ public class IslandController
 	private Island England;
 	private Island Gilligan;
 	private ArrayList<Island> IslandList;
-	public Island IslandArray;
+	private Island[] IslandArray;
 	//___________________________________
 	public IslandController()
 	{
-		Hawaii = new Island();
-		England = new Island();
-		Gilligan = new Island();
+		Hawaii = new Island("Hawaii", 15000, true);
+		England = new Island("England", 400000, false);
+		Gilligan = new Island("Gilligan's Island", 7, true);
 		ArrayList<Island> IslandList = new ArrayList<Island>();
 		Island[] IslandArray = new Island[3];
+		Island[] IslandImageArray = new Island[3];
+		
+		IslandImageArray = new Island[3];
+		IslandImageArray[0] = new Island(getClass().getResource());
+		IslandImageArray[1] = new Island(getClass().getResource());
+		IslandImageArray[2] = new Island(getClass().getResource());
 	}
-	//------------------------------------
+	//____________________________________
+	public void start()
+	{
+		
+	}
+	//____________________________________
+	private void arrayInitialization()
+	{
+		JOptionPane.showMessageDialog(null, "When youu initialize an array of objects, \nit is filled with a bunch of null");
+		JOptionPane.showMessageDialog(null, "If you try to use them it will crash");
+		JOptionPane.showMessageDialog(null, "But if you fill he array with values it is good");
+		
+		for(int index = 0; index < IslandArray.length; index += 1)
+		{
+			if (index % 2 == 0)
+			{
+				IslandArray[index] = new Island();
+			}
+			else
+			{
+				IslandArray[index] = new Island();
+			}
+		}
+	}
+	//____________________________________
 	public Island getHawaii()
 	{
 		return Hawaii;
@@ -36,11 +66,6 @@ public class IslandController
 	public Island getGilligan()
 	{
 		return Gilligan;
-	}
-	//____________________________________
-	public void start()
-	{
-		
 	}
 	//____________________________________
 	public void buildTheLists()

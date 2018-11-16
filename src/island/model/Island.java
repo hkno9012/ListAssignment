@@ -13,7 +13,7 @@ public class Island
 		this.isWarm = true;
 	}
 	//---------------------------------
-	public Island(int Inhabitants)
+	public Island(String Name, int Inhabitants, boolean isWarm)
 	{
 		this.Inhabitants = Inhabitants;
 		this.Name = "My Island: " + Inhabitants + " people";
