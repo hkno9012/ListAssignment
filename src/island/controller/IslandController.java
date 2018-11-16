@@ -21,8 +21,8 @@ public class IslandController
 		Gilligan = new Island("Gilligan's Island", 7, true);
 		ArrayList<Island> IslandList = new ArrayList<Island>();
 		Island[] IslandArray = new Island[3];
-		Island[] IslandImageArray = new Island[3];
 		
+		Island[] IslandImageArray = new Island[3];
 		IslandImageArray = new Island[3];
 		IslandImageArray[0] = new Island(getClass().getResource());
 		IslandImageArray[1] = new Island(getClass().getResource());
@@ -31,7 +31,7 @@ public class IslandController
 	//____________________________________
 	public void start()
 	{
-		
+		arrayInitialization();
 	}
 	//____________________________________
 	private void arrayInitialization()
