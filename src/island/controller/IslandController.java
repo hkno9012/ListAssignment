@@ -13,7 +13,7 @@ public class IslandController
 	private Island Gilligan;
 	private ArrayList<Island> IslandList;
 	private Island[] IslandArray;
-	//___________________________________
+	//____________________________________________________________
 	public IslandController()
 	{
 		Hawaii = new Island("Hawaii", 15000, true);
@@ -74,7 +74,7 @@ public class IslandController
 		IslandList.add(England);
 		IslandList.add(Gilligan);
 	}
-	//____________________________________________
+	//_______________________________________________________________________
 	/*private boolean validInt(String maybeInt)
 	{
 		boolean isValid = false;

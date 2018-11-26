@@ -8,9 +8,9 @@ public class Island
 	//_________________________________
 	public Island()
 	{
-		this.Name = "My Island";
-		this.Inhabitants = 40;
-		this.isWarm = true;
+		/*this.Name = "";
+		this.Inhabitants = 0;
+		this.isWarm = true;*/
 	}
 	//---------------------------------
 	public Island(String Name, int Inhabitants, boolean isWarm)
